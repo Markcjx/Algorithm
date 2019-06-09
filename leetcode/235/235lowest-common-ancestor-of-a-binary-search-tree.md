@@ -40,7 +40,7 @@ class Solution {
 #### 3.优化思路
 由于该题目说明是二叉搜索树，因此可以利用搜索树的特性左子树小于根节点，右子树大于根节点来循环遍历，可以不用递归实现,这种实现方式更加简洁，效率也更高，因为通过二叉搜索树的特性减少了遍历的节点。
 
-~~~
+~~~ java
 class Solution {
     public TreeNode lowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q) {
         if(p.val>root.val&&q.val>root.val){
