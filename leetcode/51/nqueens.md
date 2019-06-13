@@ -21,7 +21,7 @@ $$ \frac{x_1-x_2}{y_1-y_2}=\pm1 $$
 可以转换为
 
 
-![](http://latex.codecogs.com/gif.latex?x_1-y_1 = x_2-y_2)
+![](http://latex.codecogs.com/gif.latex?x_1-y_1=x_2-y_2)
  
 
 
