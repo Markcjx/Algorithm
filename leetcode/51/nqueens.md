@@ -27,7 +27,7 @@ n皇后问题是一个比较经典的搜索和剪枝的问题，问题的思路�
 
 ![](http://latex.codecogs.com/gif.latex?x_1+y_1=x_2+y_2)
 
-所用可以用3个List分别存放列，列行想加，列行相减这3个值，每次放Queen时可以去检查这3个List有没有重复，若有一个重复，那说明这个Queen的位置就不满足条件。
+所用可以用3个List分别存放列，列行相加，列行相减这3个值，每次放Queen时可以去检查这3个List有没有重复，若有一个重复，那说明这个Queen的位置就不满足条件。
 
 ``` java
 class Solution {
@@ -46,7 +46,7 @@ class Solution {
             result.add(l);
             return;
         }
-        每层的每个位置都放置一次检查是否能放下去
+        //每层的每个位置都放置一次检查是否能放下去
         for (int col = 0; col < n; col++){
             if(cols.indexOf(col)>=0||pos.indexOf(col+row)>=0||nag.indexOf(col-row)>=0){
                 continue;
